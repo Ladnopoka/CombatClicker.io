@@ -1,0 +1,52 @@
+
+# ****************** READ THE INSTRUCTIONS. THEY ARE NUMBERED 1-7. READ THEM ALL.**************
+# This is an automatically processed file
+# Read the instructions carefully
+#============================================
+# Example entry
+#============================================
+#Group 17
+#  Name: Bloggs, Joe
+#    Grade: 4 #grades are marked out of 10 - just write a number from 0-10 inclusive, nothing else
+#    Reason: Turned up from time to time and did a bit of work
+#  Name: DOE, JANE* #This is Jane's peer feedback report, so she puts an asterisk after her name
+#    Grade: 10
+#    Reason: I did all the work. My attendance was excellent and I organised the group.
+#  Name: DOE, JOHN
+#    Grade: 8
+#    Reason: Pretty good programmer. Handled all of the front-end work. Stopped contributing in last week
+#  Name: OTHER, ANNE
+#    Grade: 7
+#    Reason: Anne handled server deployment and much of the project research. Her attendance was poor though
+#============================================
+# Instructions:
+# 1) Find your group in this file
+# 2) Place an asterisk after your name (without any spaces). Do not edit your name - even if it appears incorrectly
+# 3) Place a grade for yourself in the field below your name (just write 0,1,2,3,4,5,6,7,8,9, or 10)
+# 4) Place a comment in the 'reason' field. Do not use line breaks (i.e. don;t press return). Just write the comment on one long line (with multiple sentences, if required).
+# 5) Do this for each of your team mates. Don't put asterisks next to their names.
+# 6) Save the file and rename to STUDENTNUMBER_FIRSTNAME_LASTNAME.txt where STUDENTNUMBER, FIRSTNAME, LASTNAME correspond to your details
+# 7) Submit this file to the correct link on Moodle
+#=======================================================================================================================================
+# WARNING: ***************This is an automatically processed file. Do not edit unless you have read the instructions above.*************
+#===========================================BEGIN=======================================================================================
+Group: 8
+  Name: DOHERTY, CIARAN
+    Grade: 10
+    Reason: Turned up most days, expressed interest and curiosity during the project development. Added functionality to the game, such as victory/defeat screen and created routing between main menu, settings and main game. Was easy to communicate with if there were any issues.
+  Name: DUMA, DANIEL
+    Grade: 2
+    Reason: Turned up most days but did not contribute to the actual project, other than doing some research and giving some ideas for others to implement. Did not show up at final presentation and gave no reasoning. Multiple times said he will do something for next sprint, and didnt do. Did not help with project documentation.
+  Name: DUNNE, PEARSE ADAM
+    Grade: 7
+    Reason: Expressed interest and desire to help others in the group. Pearse had very little experience with writing code, as he is only in 2nd year. However, he helped in different way, such as providing music and game sounds from his experience in musical programming. Helped with research and ideas.
+  Name: IVANOV, JEVGENIJ*
+    Grade: 10
+    Reason: Developped the whole browser game with over a thousand lines of code throughout Javascript, CSS and HTML files. Turned up to every meeting and delivered tasks assigned in a every sprint. Brought something new every single week in small but functional increments. Played the role of a project leader and ensured everyone has tasks assigned. Tested code written by others and merged it with main branch of the project. Made final presentation slides and screencast. Ensured the project was completed before the deadlines and was fully functional.
+  Name: O'LEARY, CONOR
+    Grade: 10
+    Reason: Expressed interest and motivation to work on the project. Turned up most days. Was the brains behind Firebase where we stored various data. Ensured the login and registration pages work well with Firebase and an end user could create an account, log in and play the game. Helped a lot with project documentation.
+  Name: OSMANOVIC NEDIC, DENIS
+    Grade: 8
+    Reason: Expressed lots of interest and drive to work. Turned up most days. Started developping front end for menus from day 1. Came back with working menus each sprint. Felt a bit lazy towards the end of the project, the menus he developed had issues during the final presentation. Did not show up to final presentation but had provided reasoning (sick).
+#===========================================END=========================================================================================
