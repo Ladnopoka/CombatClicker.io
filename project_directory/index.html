@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
+    <link rel="icon" href="https://user-images.githubusercontent.com/32498188/31148909-25220ebc-a85c-11e7-8998-7633fa80945b.png" />
+
+    <title>CombatClicker.io</title>
+</head>
+
+<!-- This is for when the game is loading-->
+<div class="loader_bg" style="display: block">
+    <div class="loader"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> setTimeout(function () {$('.loader_bg').fadeToggle(); }, 1200);</script>
+
+<body>
+    <div class="scoreboard" id ="scoreboardid">
+        <div class="playerBoard">
+            <h2 id="playerBorder">Player 100/100</h2>
+            <img id="charImage" src="./Character_Images/DefaultChar.jpg" alt="Character Dude"/>
+
+            <div class="fade-out" id="PlayBadge">
+                <img id="playerBang" src="./Other_Images/bang.png" alt="bang"/>
+                <p id="playerBangNumber">25</p>
+            </div>
+            <input type="checkbox" class="checkbox" id="check1" onclick="myCheck1()"/>
+            <input type="checkbox" class="checkbox" id="check2" onclick="myCheck2()"/>
+            <input type="checkbox" class="checkbox" id="check3" onclick="myCheck3()"/>
+            <input type="checkbox" class="checkbox" id="check4" onclick="myCheck4()"/>
+            <input type="checkbox" class="checkbox" id="check5" onclick="myCheck5()"/>
+        </div>
+
+        <div class="computerBoard" id ="scoreboardidComputer">
+            <h2 id="computerBorder">Rat 100/100</h2>
+            <img id="charImage" src="./Character_Images/Rat_Warrior_1.jpg" alt="Character Dude"/>
+
+            <div class="fade-out" id ="CompBadge">
+                <img id="computerBang" src="./Other_Images/bang.png" alt="bang"/>
+                <p id="computerBangNumber">25</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="logContainer">
+        <div class="title">Combat Log</div>
+        <div id="content" class="contentLog">
+            <!-- this will fill with content after clicking! -->
+        </div>
+    </div>
+
+    <div class="checkboxes" id ="checkboxes">
+        <p id="textCheck1" style="display:none">Attacking Head!</p>
+        <p id="textCheck2" style="display:none">Attacking Body!</p>
+        <p id="textCheck3" style="display:none">Attacking Waist!</p>
+        <p id="textCheck4" style="display:none">Attacking Legs!</p>
+        <p id="textCheck5" style="display:none">Attacking Arms!</p>
+        <button id="attack">Attack</button>
+    </div>
+
+    <!--RESULT POP UPS-->
+    <div class="loseMessage" id="loseMessage">
+        <!--<img id="defeat" src=".\dds9l7a-6aba6474-f2ad-4fcd-9546-2136a0c89883.jpg" alt="lostpic"/> -->
+        <h3 id="defeated-text">You have been Slain</h3>
+        <div class="picLose">
+            <img id="defeat" src=".\defeat.jpg" alt="lostpic"/>
+        </div>
+        
+        <div>
+            <button class="play-again" onclick="window.location.reload()">Play Again</button>
+            <button class="main-menu"> Main Menu</button>
+        </div>
+    </div>
+
+    <div class="VictoryMessage" id="victoryMessage">
+        <!--<img id="defeat" src=".\dds9l7a-6aba6474-f2ad-4fcd-9546-2136a0c89883.jpg" alt="lostpic"/> -->
+        <h3 id="victory-text">Victory!</h3>
+        <div class="picWin">
+            <img id="victory" src=".\victory.jpg" alt="winpic"/>
+        </div>
+        
+        <div>
+            <button class="play-again" onclick="window.location.reload()">Play Again</button>
+            <button class="main-menu"> Main Menu</button>
+        </div>
+    </div>
+    
+    <script type="module" src="JS_Functionality/CombatClicker.js"> </script>
+    <script src="JS_Functionality/Checks.js"> </script>
+    <script src="JS_Functionality/Player.js"> </script>
+    <script src="JS_Functionality/Computer.js"> </script>
+    <script src="JS_Functionality/Functions.js"> </script>
+
+</body>
+</html>
+
+<!-- References:
+    BANG! icon taken from: https://www.clipartmax.com/download/m2i8H7N4d3i8m2m2_bang-icon-png/-->

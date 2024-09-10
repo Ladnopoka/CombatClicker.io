@@ -1,0 +1,416 @@
+.loader_bg {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.76)), url(./Other_Images/battle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* The actual loader animation */
+.loader {
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(50% - 55px);
+    height: 100px;
+    width: 100px;
+    background: url(https://user-images.githubusercontent.com/32498188/31148909-25220ebc-a85c-11e7-8998-7633fa80945b.png);
+    background-size: cover;
+    transform-origin: 50% 50%;
+    animation: spin 1.5s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); translate:(-50%, -50%); }
+    100% {
+        transform: rotate(360deg); translate:(-50%, -50%); }
+}
+
+body {
+    margin-bottom: 1000px;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background: black;
+    color: #4ab848;
+    font-family: Rye, sans-serif;
+    margin: 3em;
+    background-image: url("./Other_Images/battle.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top:100px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+h2 {
+    font-size: 33px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.01px black;
+  }
+
+
+.logContainer {
+    height: 290px;
+    width: 800px;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    position: relative;
+    border-radius: 25px;
+    margin: auto;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+    top: 30px;
+    bottom: 0px;
+    right: 67px;
+}
+.contentLog::-webkit-scrollbar {
+    width: 12px;
+    margin-right: 70px;
+    margin-top: 100px;
+}
+.contentLog::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 12px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.contentLog::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.contentLog {
+    height: 225px;
+    width: 95.8%;
+    display: inside;
+    flex-direction: column;
+    overflow: auto;
+    color: black;
+    text-align: left;
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 1.6rem;
+    font-family: DialogInput, sans-serif;
+  }
+
+.title {
+    color: black;
+}
+  
+.scoreboard {
+    width: 14em;
+    margin: auto;
+    border: 1px solid #B21807;
+    position: relative; 
+    right: 380px;
+    background-image: url(./Shield_Images/shields.jpg);
+    background-size: cover;
+    height: 25em;
+}
+#playerBorder {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #B21807;
+}
+.scoreboard table {
+    margin: 10px auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.scoreboard th, .scoreboard td {
+    text-align: center;
+}
+.scoreboard td {
+    font-size: 3em;
+    padding: 0 20px;
+}
+.computerBoard
+{
+    width: 14em;
+    height: 25em;
+    position: absolute;
+    right: -630px;
+    top: 0px;
+    border: 1px solid #85B0BE;
+    background-image: url(./Weapon_Images/weapons.jpg);
+    background-size: cover;
+}
+#computerBorder {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #85B0BE;
+}
+
+
+  .selections
+  {
+   margin-top: -600px;
+   margin-left: 200px;
+   white-space: pre-wrap;
+  }
+
+#check1
+{ 
+    position: absolute;
+    bottom: 285px;
+    left: 750px;
+    pointer-events: all;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+#check2
+{ 
+    position: absolute; 
+    bottom: 195px; 
+    left: 740px; 
+    pointer-events: all;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+#check3
+{ 
+    position: absolute; 
+    bottom: 125px; 
+    left: 720px; 
+    pointer-events: all;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+#check4
+{ 
+    position: absolute; 
+    bottom: 85px; 
+    left: 770px; 
+    pointer-events: all;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+#check5
+{ 
+    position: absolute; 
+    bottom: 155px; 
+    left: 795px; 
+    pointer-events: all;
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+}
+
+  #charImage {
+    margin-top: 20px;
+    width: 200px;
+    height: 380px;
+    position: relative;
+  }
+
+
+  #playerBang {
+    top: -470px;
+    left: -100px;
+    width: 240px;
+    height: 230px;
+    position: relative;
+    z-index: 1;
+    transform: rotate(160deg);
+
+    display: none;
+    animation-name: fadeOut;
+    animation-duration: 6s;
+  }
+  #playerBangNumber {
+    top: -690px;
+    left: -116px;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+    transform: rotate(-20deg);
+
+    display: none;
+    animation-name: fadeOut;
+    animation-duration: 6s;
+  }
+  #computerBang {
+    top: -480px;
+    left: 120px;
+    width: 240px;
+    height: 230px;
+    position: relative;
+    z-index: 1;
+    transform: rotate(280deg);
+
+    display: none;
+    animation-name: fadeOut;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+  }
+  #computerBangNumber {
+    top: -690px;
+    left: 104px;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+    transform: rotate(20deg);
+
+    display: none;
+    animation-name: fadeOut;
+    animation-duration: 6s;
+  }
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+  #attack {
+      background: #B21807;
+      display: none;
+  }
+
+.checkboxes
+{
+    color: #B21807;
+    text-shadow: 1px 1px #0c0404;
+    font-size: 36.5px;
+    position: relative;
+    left: -65px;
+    top: -750px;
+
+    -webkit-text-stroke: 0.7px black;
+}
+
+button {
+
+    color: black;
+ 
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-family: Rye, sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    display: block;
+    position: relative;
+    left: calc(50% - 95px);
+    top: calc(50% - 80px);
+
+    font-weight: 100;
+    text-shadow: #4ab848;
+    margin-top: 180px;
+}
+
+ /* Result Pop Up*/
+ .loseMessage{
+    visibility: visible; 
+    height: 500px;
+    width: 300px;
+    padding: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+
+    font-family: Rye, sans-serif;
+}
+#loseMessage{ 
+   background-color: rgba(19, 17, 17, 0.751);
+   visibility: hidden;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   bottom: 0;
+
+   font-family: Rye, sans-serif;
+}
+#victoryMessage{
+    background-color: rgba(19, 17, 17, 0.751);  
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    font-family: Rye, sans-serif;
+  }
+
+.picWin{
+    height: 290px;
+    width: 250px;
+    margin: auto;
+    box-shadow: 0 0 20px 10px;
+    color: green;
+    position: relative;
+    top: 50px;
+}
+.picLose{
+    height: 290px;
+    width: 250px;
+    margin: auto;
+    box-shadow: 0 0 20px 10px;
+    color: red;
+    position: relative;
+    top: 50px;
+}
+img{
+    height: 290px;
+    width: 250px;
+    position: relative;
+    top: 0px;
+}
+.play-again{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: calc(50% - 105px);
+    top: -100px;
+}
+
+.main-menu{
+    width: 200px;
+    height: 50px;
+    padding: 1px;
+    position: relative;
+    left: calc(50% - 105px);
+    top: -240px;
+}
+
+#victory-text {
+    font-size: 33px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 1%, rgba(55,150,9,1) 32%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 0.01px black;
+  }
+#defeated-text {
+    font-size: 33px;
+    background: rgb(2,0,36);
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    -webkit-text-stroke: 0.01px black;
+  }
+
+
+
+ 
